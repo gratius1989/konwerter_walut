@@ -1,0 +1,126 @@
+// colors
+$white: #fff;
+$darkness: #5e5e5e;
+
+@-webkit-keyframes move {
+    0%   {top: -200px; opacity: 0;}
+    100% {top: -85px; opacity: 1;}
+}
+
+// animate
+
+@keyframes move {
+    0%   {top: -200px; opacity: 0;}
+    100% {top: -85px; opacity: 1;}
+}
+
+// -----------------
+
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+	width: 999px;
+	margin: 0 auto;
+	background-color: #f7f7f7;
+	min-height: 1080px;
+}
+
+.inner-wrapper {
+	width: 600px;
+	margin: 0 auto;
+	h1 {
+		font-size: 32px;
+		font-weight: normal;
+		padding: 18px 0;
+		padding-top: 39px;
+		strong {
+			font-weight: 500;
+		}
+	}
+}
+
+// convert
+
+.convert {
+	height: 146px;
+	background: $white;
+	padding: 0 14px;
+	padding-top: 48px;
+	margin-bottom: 30px;
+	position: relative;
+
+	input {
+		height: 79px;
+		width: 50%;
+		float: left;
+		&:nth-of-type(1) {
+			border: 1px solid rgb(200, 200, 200);
+			border-right: none;
+			border-radius: 15px 0 0 15px;
+			font-size: 48px;
+			padding-left: 10px;
+		}
+		&:nth-of-type(2) {
+			border-radius: 0px 15px 15px 0px;
+			border: 1px solid transparent;
+			background-color: #58d999;
+			box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+			cursor: pointer;
+			font-size: 24px;
+			color: $white;
+			font-weight: 500;
+		}
+	}
+
+	img {
+		position: absolute;
+		top: -85px;
+		right: -70px;
+		width: 145px;
+		height: auto;
+		-ms-transform: rotate(16deg);
+    	-webkit-transform: rotate(16deg);
+    	transform: rotate(16deg);
+    	-webkit-animation: move .6s;
+    	animation: move .6s;
+	}
+}
+
+// amount
+
+.amount {
+	.amount-item {
+		width: 47%;
+		margin-right: 6%;
+		margin-bottom: 14px;
+		float: left;
+
+		&:nth-of-type(2) {
+			margin-right: 0;
+		}
+
+		.amount-item-top {
+			background: $white;
+			text-align: center;
+			span {
+				color: $darkness;
+				padding-top: 16px;
+				display: inline-block;
+			}
+
+			p {
+				font-size: 48px;
+				padding: 21px 0;
+				padding-bottom: 38px;
+			}
+		}
+
+		.amount-item-bottom {
+			color: #9c9c9c;
+			padding: 7px 0;
+		}
+	}
+}
