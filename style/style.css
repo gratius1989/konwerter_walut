@@ -62,7 +62,7 @@
       background-color: #58d999;
       box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
       cursor: pointer;
-      font-size: 13px;
+      font-size: 9px;
       color: #fff;
       font-weight: 500; }
   .convert img {
@@ -101,6 +101,9 @@
     padding: 7px 0;
     font-size: 14px; }
 
+@media only screen and (min-width: 320px) {
+  .convert input:nth-of-type(2) {
+    font-size: 13px; } }
 @media only screen and (min-width: 480px) {
   .inner-wrapper {
     width: 75%; }

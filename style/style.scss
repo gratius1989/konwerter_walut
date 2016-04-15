@@ -18,7 +18,7 @@ $break-large: 1024px;
     100% {top: -85px; opacity: 1;}
 }
 
-// -----------------
+// ----------------------------------------------
 
 * {
 	box-sizing: border-box;
@@ -54,7 +54,7 @@ $break-large: 1024px;
 	}
 }
 
-// convert
+// convert --------------------------------------
 
 .convert {
 	height: 146px;
@@ -81,7 +81,7 @@ $break-large: 1024px;
 			background-color: #58d999;
 			box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
 			cursor: pointer;
-			font-size: 13px;
+			font-size: 9px;
 			color: $white;
 			font-weight: 500;
 		}
@@ -103,7 +103,7 @@ $break-large: 1024px;
 	}
 }
 
-// amount
+// amount ------------------------------------
 
 .amount {
 	.amount-item {
@@ -141,7 +141,17 @@ $break-large: 1024px;
 }
 
 
-// rwd-------------------------------
+// rwd--------------------------------------
+
+@media only screen and (min-width: 320px) {
+	.convert {
+		input {
+			&:nth-of-type(2) {
+				font-size: 13px;
+			}	
+		}
+	}
+}
 
 @media only screen and (min-width: $break-small) {
 
